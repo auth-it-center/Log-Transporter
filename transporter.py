@@ -145,7 +145,7 @@ os.remove(clean_log_file_path)
 
 # Compress monthly logs
 print "Zipping logs"
-archive_name = os.path.join(root_dir, 'archive_access_logs', 'access_log-' + date_range)
+archive_name = os.path.join(root_dir, 'archive_access_logs', 'access_log-' + date_range + ".gz")
 # shutil.make_archive(archive_name, 'gztar', parsed_path)
 # Python 2.4 compatible
 gzipdir(parsed_path, archive_name)
